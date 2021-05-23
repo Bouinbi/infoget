@@ -13,9 +13,9 @@ sudo pip3 install <Module_Name>
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install InfoGit .
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install InfoGet .
 
-- Go to Folder Infogit ( . is in the command )
+- Go to Folder Infoget ( . is in the command )
 
 ```bash
 sudo pip3 install -e .
@@ -24,17 +24,17 @@ sudo pip3 install -e .
 ## Usage
 
 ```bash
-infogit URL
+infoget URL
 ```
 exemple of URL Syntaxe   :   URL = http://ensao.ump.ma/ 
 
 
 For more info 
 ```bash
-infogit --help
+infoget --help
 ```
 ## Uninstall 
 
 ```bash
-sudo pip3 uninstall infogit
+sudo pip3 uninstall infoget
 ```

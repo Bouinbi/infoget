@@ -2,7 +2,7 @@ from pyfiglet import Figlet
 import click
 import requests
 from bs4 import BeautifulSoup
-from infogit.fct import scrp
+from infoget.fct import scrp
 from colorama import Fore
 
 

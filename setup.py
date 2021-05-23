@@ -1,14 +1,14 @@
 """
-infogit setup 
+infoget setup 
 
 """
 from setuptools import setup
 
 setup(
-    name="infogit",
+    name="infoget",
     version="1.0.0",
     description="Git info about website ",
-    packages=['infogit'],
+    packages=['infoget'],
     
     install_requires=[
         "click",
@@ -16,7 +16,7 @@ setup(
     		],
     
     entry_points={
-        'console_scripts': ['infogit=infogit.__main__:main']
+        'console_scripts': ['infoget=infoget.__main__:main']
                 },
 
 )

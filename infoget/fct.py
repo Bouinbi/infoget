@@ -113,12 +113,8 @@ def scrp(url) : # function to mget and manage data
     net.pop()
 
     # remove ip6 from ip4 table 
-    for x in range(len(ip4_final)) :
-        if ip6 != 'Not Present' :
-            while ip4_final[-1] != var :
-                ip4_final.pop()
-            ip4_final.pop()
-
+    for x in ip6_final :
+        ip4_final.remove(x)
 
 
     # print backgound table :

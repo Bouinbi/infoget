@@ -7,7 +7,7 @@ from setuptools import setup
 setup(
     name="infoget",
     version="1.0.0",
-    description="Git info about website ",
+    description="Get info about website ",
     packages=['infoget'],
     
     install_requires=[

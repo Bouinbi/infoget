@@ -1,30 +1,33 @@
-from pyfiglet import Figlet
+
 import click
-import requests
-from bs4 import BeautifulSoup
-from infoget.fct import scrp
-from colorama import Fore
+
+from infoget.get_info import scrp
+from infoget.get_scan import scn
+from infoget.get_detect import dtc
+
+
 
 
 @click.command()
-@click.argument('url')
 
-def main(url):
+@click.option('-g','--gathering',help= " : this options is using for gathering information")
 
-    # print the interfaces 
-    print("")
-    print(Fore.GREEN + "----------------------------- Info Get -----------------------------------")
-    f = Figlet(font='slant')
-    print(Fore.GREEN + f.renderText('I n f o  --  G e t'))
-    print(Fore.GREEN + "----------------------------- Info Get -----------------------------------")
-    print("")
+@click.option('-s','--scan',help= " : this options is using for scanning ip")
 
-    print(Fore.GREEN + "[+] please wait, because this operation might take some time : ")
-    print("")
+@click.option('-d','--detection',help= " : this options is using for detection vulnerability")
 
 
-    # called scarping function to extract data 
-    scrp(url)
+def main(gathering,scan,detection):
 
+    """ simple tool for gathering information , scanning port and other ... """
+
+    if gathering :
+        scrp(gathering)
+
+    if scan :
+        scn(scan) 
+
+    if detection :
+        dtc(detection)
 
 

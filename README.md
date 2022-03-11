@@ -24,28 +24,15 @@ sudo pip3 install -e .
 ## Usage
 
 ```bash
-infoget -g URL
+infoget -g URL/IP
 ```
-exemple of URL Syntaxe   :   URL = http://ensao.ump.ma/ 
 
-
-```bash
-infoget -s IP
-```
-IPv4 : IP = 192.168.1.22
-
-
-```bash
-infoget -d IP
-```
-IPv4 : IP = 192.168.1.22 
-
-For more info 
+For more info :
 ```bash
 infoget --help
 ```
 ## Uninstall 
 
 ```bash
-sudo pip3 uninstall infogit
+sudo pip3 uninstall infoget
 ```

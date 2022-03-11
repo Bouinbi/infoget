@@ -19,7 +19,7 @@ ip6_final = []
 
 
 
-def scrp(url) : # function to mget and manage data
+def scrp(url) : # function to get and manage data
 
     # print interfaces and figlet 
     print("")
@@ -46,7 +46,7 @@ def scrp(url) : # function to mget and manage data
     ssl_befor = []
 
 
-    # for get special data from website using BeautifulSou
+    #for get special data from website using BeautifulSou
 
     back = soup.find_all("section",attrs={"id":"background_table_section"})
 
@@ -57,7 +57,7 @@ def scrp(url) : # function to mget and manage data
 
     # Remove space and other character from list --- for background list
     a = back[0].text.replace('\xa0',' ')
-    back_befor.append(a.strip())
+    back_befor.append(a.strip())`
     back_befor = back_befor[0].split("\n")
     for x in back_befor:
         if x.strip():
@@ -144,7 +144,7 @@ def scrp(url) : # function to mget and manage data
     print(Fore.GREEN +  "------------------------")
     print(Fore.WHITE + "Site title            ==  Not Acceptable! ")
     print(Fore.GREEN + "------------------------")
-    print(Fore.WHITE + "Date first seen       ==  %s" % back[6])
+    print(Fore.WHITE + "Date first seen       ==  %s" % back[6])  
     print(Fore.GREEN + "------------------------")
     print(Fore.WHITE + "Site rank             ==  %s" % back[3])
     print(Fore.GREEN + "------------------------")

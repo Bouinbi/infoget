@@ -15,7 +15,7 @@ sudo pip3 install <Module_Name>
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install InfoGet .
 
-- Go to Folder Infogit ( . is in the command )
+- Go to  Infoget Folder and run ( . is in the command )
 
 ```bash
 sudo pip3 install -e .

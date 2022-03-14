@@ -57,7 +57,7 @@ def scrp(url) : # function to get and manage data
 
     # Remove space and other character from list --- for background list
     a = back[0].text.replace('\xa0',' ')
-    back_befor.append(a.strip())`
+    back_befor.append(a.strip())
     back_befor = back_befor[0].split("\n")
     for x in back_befor:
         if x.strip():
